@@ -1,0 +1,8 @@
+# High-Frequency RF Emission Measurement (Non-overlapping with audio/baseband band)
+Frequency_Hz,Amplitude_dBuA_m
+10000000.0,15.2
+20000000.0,24.8
+25175000.0,42.1
+50000000.0,18.4
+75525000.0,31.2
+100000000.0,12.7

@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vga-emi-analyzer"
+version = "0.1.0"
+description = "VGA Cable EMI Analyzer - Visual Recreation and Scientific Analysis Foundation"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "streamlit>=1.35.0",
+    "numpy>=1.26.0",
+    "scipy>=1.12.0",
+    "matplotlib>=3.8.0",
+    "opencv-python>=4.9.0",
+    "pillow>=10.0.0",
+    "pandas>=2.2.0",
+    "pyyaml>=6.0",
+    "pydantic>=2.5.0",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=8.0.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+pythonpath = ["src"]

@@ -1,0 +1,42 @@
+# VGA Cable EMI Analyzer - Default Configuration
+
+app:
+  name: "VGA Cable EMI Analyzer"
+  version: "0.1.0"
+  demo_mode: true
+
+frequency:
+  min_hz: 10.0
+  max_hz: 400000.0
+  scale: "log"
+  num_points: 2048
+
+waveform:
+  time_window_us: 100.0
+  num_samples: 2048
+  default_channels: 3
+
+traces:
+  num_active: 3
+  min_traces: 2
+  max_traces: 8
+  colors:
+    ch1: "#ffdd00"   # Oscilloscope Channel 1 Yellow
+    ch2: "#00e5ff"   # Oscilloscope Channel 2 Cyan
+    ch3: "#e040fb"   # Oscilloscope Channel 3 Magenta
+    ch4: "#00e676"   # Oscilloscope Channel 4 Green
+    combined: "#ff5722" # Orange-Red combined math
+    sqrt: "#76ff03"     # Lime Green sqrt math
+    emi_spectrum: "#0055d4" # Royal Blue Python output
+
+reference_line:
+  enabled: false
+  value_db: 50.0
+  label: "Configurable Reference (50 dBµA/m)"
+  color: "#d32f2f"
+  style: "--"
+
+peak_detection:
+  prominence: 4.0
+  distance: 15
+  top_k: 8
